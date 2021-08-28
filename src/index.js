@@ -4,23 +4,28 @@ import ReactDom from 'react-dom'
 // CSS
 import './index.css'
 
-const firstBook = {
+const books = [ 
+  {
   img: 'https://images-na.ssl-images-amazon.com/images/I/41JIh4KMHRL._AC_SX184_.jpg',
   title: 'This is the NEW cool title!',
   author: 'Nick Deanss'
-}
-
-const secondBook = {
+}, {
   img: 'https://images-na.ssl-images-amazon.com/images/I/51CPNIRSWeL._AC_SX368_.jpg',
   title: 'This is the SECOND cool title!',
   author: 'Nicky Deans'
-}
+},
+]
+
+const names = ['john', 'peter', 'susan']
+const newNames = names.map((name) => {
+  return <h1>{name}</h1>
+}) 
+console.log(newName);
 
 const Booklist = () => {
   return (
     <section className="booklist">
-      <Book img={firstBook.img} title={firstBook.title} author={firstBook.author} />
-      <Book img={secondBook.img} title={secondBook.title} author={secondBook.author} />
+      {newNames}
       <Book />
       <Book />
       <Book />
@@ -30,7 +35,7 @@ const Booklist = () => {
   )
 }
 
-const Book = ({ img, title, author}) => {
+const Book = ({ img, title, author }) => {
   return (
     <article className="book">
       <img src={img} alt='' />
