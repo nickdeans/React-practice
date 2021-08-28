@@ -4,11 +4,28 @@ import ReactDom from 'react-dom'
 // CSS
 import './index.css'
 
+const books = [ 
+  {
+  img: 'https://images-na.ssl-images-amazon.com/images/I/41JIh4KMHRL._AC_SX184_.jpg',
+  title: 'This is the NEW cool title!',
+  author: 'Nick Deanss'
+}, {
+  img: 'https://images-na.ssl-images-amazon.com/images/I/51CPNIRSWeL._AC_SX368_.jpg',
+  title: 'This is the SECOND cool title!',
+  author: 'Nicky Deans'
+},
+]
+
+const names = ['john', 'peter', 'susan']
+const newNames = names.map((name) => {
+  return <h1>{name}</h1>
+}) 
+console.log(newName);
+
 const Booklist = () => {
   return (
-    <section>
-      <Book />
-      <Book />
+    <section className="booklist">
+      {newNames}
       <Book />
       <Book />
       <Book />
@@ -18,35 +35,14 @@ const Booklist = () => {
   )
 }
 
-const Book = () => {
+const Book = ({ img, title, author }) => {
   return (
-    <article>
-      <Image />
-      <Title />
-      <Author />
+    <article className="book">
+      <img src={img} alt='' />
+      <h1>{title}</h1>
+      <h4>{author}</h4>
+      <p>{title}</p>
     </article>
-  )
-}
-
-const Image = () => {
-  return (
-    <img src="https://images-na.ssl-images-amazon.com/images/I/41JIh4KMHRL._AC_SX184_.jpg" alt="" />
-  )
-}
-
-const Title = () => {
-  return (
-    <h1>
-      This is the cool title!
-    </h1>
-  )
-}
-
-const Author = () => {
-  return (
-    <h4>
-      Nick Deans
-    </h4>
   )
 }
 
