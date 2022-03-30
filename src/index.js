@@ -1,24 +1,15 @@
 import React from 'react';
 import ReactDom from 'react-dom'
-import {data} from './books'
-import Book from './Book'
+import {data} from './Books/book-data'
+import Book from './Books/Book'
 
 // CSS
-import './index.css'
+import Books from './Books/Books'
 
-// const names = ['john', 'peter', 'susan']
-// const newNames = names.map((name) => {
-//   return <h1>{name}</h1>
-// }) 
-
-const Booklist = () => {
+const App = () => {
   return (
-    <section className="booklist">
-      {data.map((book) => {
-        return <Book key={book.id} {...book}></Book>
-      })}
-    </section>
+    <Books />
   )
 }
 
-ReactDom.render(<Booklist />, document.getElementById('root'));
+ReactDom.render(<App />, document.getElementById('root'));
