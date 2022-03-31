@@ -1,5 +1,6 @@
+
 const Book = (props) => {
-  const {img, title, author} = props;
+  const {img, title, author, children} = props;
 
   const clickHandler = () => {
     alert(`The Title of the Book is ${title}`)
@@ -12,6 +13,7 @@ const Book = (props) => {
         <h6>{title}</h6>
         <h6>{author}</h6>
         <button type='button' onClick={clickHandler}>Click Me</button>
+        {children}
       </div>
     </article>
   )
