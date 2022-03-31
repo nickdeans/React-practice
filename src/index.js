@@ -1,14 +1,16 @@
 import React from 'react';
 import ReactDom from 'react-dom'
-import {data} from './Books/book-data'
-import Book from './Books/Book'
-
-// CSS
 import Books from './Books/Books'
+import ToursApp from './Tours/App'
+import ReviewsApp from './Reviews/App'
 
 const App = () => {
   return (
-    <Books />
+    <>
+      {/* <Books /> */}
+      {/* <ToursApp /> */}
+      <ReviewsApp />
+    </>
   )
 }
 
