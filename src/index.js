@@ -4,6 +4,7 @@ import Books from './Books/Books'
 import ToursApp from './Tours/App'
 import ReviewsApp from './Reviews/App'
 import AccordianApp from './Accordian/App'
+import TabsApp from './Tabs/App'
 
 const App = () => {
   return (
@@ -11,7 +12,8 @@ const App = () => {
       {/* <Books /> */}
       {/* <ToursApp /> */}
       {/* <ReviewsApp /> */}
-      <AccordianApp />
+      {/* <AccordianApp /> */}
+      <TabsApp />
     </>
   )
 }
