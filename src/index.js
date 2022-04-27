@@ -5,15 +5,17 @@ import ToursApp from './Tours/App'
 import ReviewsApp from './Reviews/App'
 import AccordianApp from './Accordian/App'
 import TabsApp from './Tabs/App'
+import Counter from './Counter/Counter'
 
 const App = () => {
   return (
     <>
+      <Counter />
       {/* <Books /> */}
       {/* <ToursApp /> */}
       {/* <ReviewsApp /> */}
       {/* <AccordianApp /> */}
-      <TabsApp />
+      {/* <TabsApp /> */}
     </>
   )
 }
