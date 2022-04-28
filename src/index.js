@@ -6,11 +6,13 @@ import ReviewsApp from './Reviews/App'
 import AccordianApp from './Accordian/App'
 import TabsApp from './Tabs/App'
 import Counter from './Counter/Counter'
+import Birthday from './BirthdayReminder/App'
 
 const App = () => {
   return (
     <>
-      <Counter />
+      <Birthday />
+      {/* <Counter /> */}
       {/* <Books /> */}
       {/* <ToursApp /> */}
       {/* <ReviewsApp /> */}
