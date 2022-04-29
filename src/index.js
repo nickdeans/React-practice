@@ -7,11 +7,13 @@ import AccordianApp from './Accordian/App'
 import TabsApp from './Tabs/App'
 import Counter from './Counter/Counter'
 import Birthday from './BirthdayReminder/App'
+import Pokemon from './PokemonData/App'
 
 const App = () => {
   return (
     <>
-      <Birthday />
+      <Pokemon />
+      {/* <Birthday /> */}
       {/* <Counter /> */}
       {/* <Books /> */}
       {/* <ToursApp /> */}
