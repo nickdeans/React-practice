@@ -8,11 +8,13 @@ import TabsApp from './Tabs/App'
 import Counter from './Counter/Counter'
 import Birthday from './BirthdayReminder/App'
 import Pokemon from './PokemonData/App'
+import ToursPrac from './ToursPrac/App'
 
 const App = () => {
   return (
     <>
-      <Pokemon />
+      <ToursPrac />
+      {/* <Pokemon /> */}
       {/* <Birthday /> */}
       {/* <Counter /> */}
       {/* <Books /> */}
