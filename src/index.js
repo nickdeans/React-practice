@@ -9,11 +9,15 @@ import Counter from './Counter/Counter'
 import Birthday from './BirthdayReminder/App'
 import Pokemon from './PokemonData/App'
 import ToursPrac from './ToursPrac/App'
+import ReviewsPrac from './ReviewsPrac/App'
+import AccodianPrac from './AccordianPrac/App'
 
 const App = () => {
   return (
     <>
-      <ToursPrac />
+    <AccodianPrac />
+    {/* <ReviewsPrac /> */}
+      {/* <ToursPrac /> */}
       {/* <Pokemon /> */}
       {/* <Birthday /> */}
       {/* <Counter /> */}
